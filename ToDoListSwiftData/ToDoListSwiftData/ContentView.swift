@@ -14,8 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             VStack{
-                Text("Hello world")
-                   
+                    TodoList()
             }
             .toolbar{
                 ToolbarItem{
@@ -28,7 +27,7 @@ struct ContentView: View {
             }
             .sheet(isPresented: $isPresented, content: {
                 NavigationStack{
-                    AddTodo()
+                    AddTodo(isPresented:$isPresented)
                 }
                 .presentationDetents([.medium])
             })

@@ -9,12 +9,13 @@ import SwiftUI
 import SwiftData
 
 struct AddTodo: View {
-    @Environment(\.dismiss) var dismiss
+//    @Environment(\.dismiss) var dismiss
     @Environment(\.modelContext) var context
+    @Binding var isPresented:Bool
 //    @State private var item:TodoItem = TodoItem(title: "", timestamp: .now, isCompleted: false)
     @State var title:String = ""
     @State var timestamp:Date = .now
-    @State var isImportant:Bool = false
+    @State var isImportant:Bool = true
     var body: some View {
         List{
             TextField("New Title",text: $title)
@@ -23,14 +24,15 @@ struct AddTodo: View {
             Button("Create"){
                 let model = TodoItem(title: title,timestamp: timestamp,isImportant: isImportant)
                     context.insert(model)
-                
-                dismiss()
+                isPresented = false
+//                dismiss()
             }
         }
         .navigationTitle("Create Todo")
     }
 }
 
-#Preview {
-    AddTodo()
-}
+//#Preview {
+//    AddTodo()
+//}
+

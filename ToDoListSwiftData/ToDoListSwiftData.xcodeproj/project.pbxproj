@@ -14,6 +14,10 @@
 		137F70D62AC5CB7C00DCF47C /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F70D52AC5CB7C00DCF47C /* TodoItem.swift */; };
 		137F70D92AC5CC3100DCF47C /* AddTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F70D82AC5CC3100DCF47C /* AddTodo.swift */; };
 		137F70DD2AC5E84900DCF47C /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F70DC2AC5E84900DCF47C /* TodoList.swift */; };
+		137F71232AC6C46D00DCF47C /* colorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F71222AC6C46D00DCF47C /* colorData.swift */; };
+		137F71252AC6D93000DCF47C /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F71242AC6D93000DCF47C /* Tag.swift */; };
+		137F71272AC6DD9F00DCF47C /* UpdateTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F71262AC6DD9F00DCF47C /* UpdateTodo.swift */; };
+		137F71292AC6DFF900DCF47C /* TodoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F71282AC6DFF900DCF47C /* TodoRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		137F70D52AC5CB7C00DCF47C /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		137F70D82AC5CC3100DCF47C /* AddTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodo.swift; sourceTree = "<group>"; };
 		137F70DC2AC5E84900DCF47C /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		137F71222AC6C46D00DCF47C /* colorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorData.swift; sourceTree = "<group>"; };
+		137F71242AC6D93000DCF47C /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		137F71262AC6DD9F00DCF47C /* UpdateTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTodo.swift; sourceTree = "<group>"; };
+		137F71282AC6DFF900DCF47C /* TodoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,8 @@
 			children = (
 				137F70D82AC5CC3100DCF47C /* AddTodo.swift */,
 				137F70DC2AC5E84900DCF47C /* TodoList.swift */,
+				137F71262AC6DD9F00DCF47C /* UpdateTodo.swift */,
+				137F71282AC6DFF900DCF47C /* TodoRow.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -88,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				137F70D52AC5CB7C00DCF47C /* TodoItem.swift */,
+				137F71222AC6C46D00DCF47C /* colorData.swift */,
+				137F71242AC6D93000DCF47C /* Tag.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -164,7 +176,11 @@
 			files = (
 				137F70DD2AC5E84900DCF47C /* TodoList.swift in Sources */,
 				137F70BD2AC542B400DCF47C /* ContentView.swift in Sources */,
+				137F71292AC6DFF900DCF47C /* TodoRow.swift in Sources */,
 				137F70D62AC5CB7C00DCF47C /* TodoItem.swift in Sources */,
+				137F71252AC6D93000DCF47C /* Tag.swift in Sources */,
+				137F71272AC6DD9F00DCF47C /* UpdateTodo.swift in Sources */,
+				137F71232AC6C46D00DCF47C /* colorData.swift in Sources */,
 				137F70BB2AC542B400DCF47C /* ToDoListSwiftDataApp.swift in Sources */,
 				137F70D92AC5CC3100DCF47C /* AddTodo.swift in Sources */,
 			);

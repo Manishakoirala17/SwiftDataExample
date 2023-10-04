@@ -19,7 +19,9 @@ class TodoItem{
 
     @Attribute(.externalStorage)
     var image:Data?
+    
     var tag:[Tags]?
+
     init(title: String = "", timestamp: Date = .now, isCompleted: Bool = false,isImportant:Bool = false,priority:Int = 0) {
         self.id = UUID()
         self.title = title
@@ -30,10 +32,3 @@ class TodoItem{
     }
 }
 
-@Model
-class Tags{
-    var name:String
-    init(name: String) {
-        self.name = name
-    }
-}

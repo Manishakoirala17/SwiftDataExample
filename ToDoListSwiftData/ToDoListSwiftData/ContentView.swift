@@ -24,6 +24,11 @@ struct ContentView: View {
                         Image(systemName: "plus")
                     }
                 }
+                ToolbarItem{
+                    Button("Edit"){
+                        print("edit")
+                    }
+                }
             }
             .sheet(isPresented: $isPresented, content: {
                 NavigationStack{

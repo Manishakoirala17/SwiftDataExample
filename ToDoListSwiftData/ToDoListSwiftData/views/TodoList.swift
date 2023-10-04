@@ -14,10 +14,7 @@ struct TodoList: View {
     var body: some View {
         List{
             ForEach(list,id:\.self){ item in
-                VStack(alignment: .leading){
-                    Text("\(item.title)")
-                    Text("\(item.timestamp)")
-                }
+               TodoRow(item: item)
                 .swipeActions{
                     Button(role:.destructive){
                         withAnimation{
